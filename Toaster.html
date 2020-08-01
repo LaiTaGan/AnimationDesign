@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toaster</title>
+    <link rel="stylesheet" href="Toaster.css">
+    
+</head>
+<body>
+    <div class="bread" id="bread">
+        <div id="covertop"><div id="top"></div></div>
+        <div id="coverbottom"><div id="bottom"></div></div>
+    </div> 
+    <div class="bread2" id="bread2">
+        <div id="covertop2"><div id="top2"></div></div>
+        <div id="coverbottom2"><div id="bottom2"></div></div>
+    </div> 
+    <div class="toaster">
+        <div id="bodyBack">
+            <div id="bodyFront">
+                <div id="light"></div>
+                <div id="text">Mr.Toaster</div>
+            </div> 
+            <div id="bottomEnd">
+                <div id="bottomFront"></div> 
+            </div> 
+            <div id="dot1">
+                <div id="dot2"></div><div id="dot3"></div><div id="dot4"></div>
+            </div>
+            <div id="handlerCover">
+            </div>
+            <div id="handler">
+                <div id="handlerBall"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn=document.getElementById("handlerBall")
+        var bread=document.getElementById("bread")
+        var bread2=document.getElementById("bread2")
+        var hdlr=document.getElementById("handler")
+        btn.addEventListener('click',function(){
+            bread.classList.add("effect2")
+            bread2.classList.add("effect3")
+            hdlr.classList.add("effect1")
+        })
+    </script>
+</body>
+</html>

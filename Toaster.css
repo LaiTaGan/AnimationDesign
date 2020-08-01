@@ -1,0 +1,185 @@
+#bodyFront{
+    width: 120px;
+    height: 70px;
+    background-color: rgba(8, 199, 199, 0.959);
+    right:30px;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    
+}
+#bodyBack{
+    width: 120px;
+    height: 70px;
+    background-color: rgba(8, 153, 153, 0.959);
+    /* top: 210px;
+    left: 400px; */
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    transform: translate(680px,350px);
+}
+#bottomFront{
+    width: 125px;
+    height: 5px;
+    background-color: blanchedalmond;
+    border-radius: 3px;
+    transform: translate(-32px,0px);
+    position: relative;
+}
+
+#bottomEnd{
+    width: 125px;
+    height: 5px;
+    background-color:rgb(129, 109, 109);
+    border-radius: 2px; 
+    position: relative;
+    transform: translate(0px,0px);
+}
+#handler{
+    width: 15px;
+    height: 5px;
+    background-color: black;
+    border-radius: 2px;
+    position: relative;
+    transform: translate(105px,-100px);
+}
+
+#handlerBall{
+    background-color: gray;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transform: translate(13px,-1px);
+    border: 2px solid black;
+}
+
+#handlerCover{
+    width: 10px;
+    height: 40px;
+    border: 2px solid black;
+    transform: translate(100px,-60px);
+    border-radius: 6px;
+    background-color: brown;
+}
+#light{
+    background-color: white;
+    border-radius: 80%;
+    width: 12px;
+    height: 12px;
+    transform: translate(10px,10px) skew(20deg,-45deg);
+}
+#dot1,#dot2,#dot3,#dot4{
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 0px 0px 3px 3px;
+}
+#dot1{
+    transform: translate(-15px,0px);
+}
+#dot2{
+    transform: translate(85px,0px);
+}
+#dot3{
+    transform: translate(25px,-8px);
+}
+#dot4{
+    transform: translate(120px,-16px);
+}
+#text{
+    font-weight: 2px;
+    font-size: 13pt;
+    color: white;
+    stroke: black;
+    transform: translate(20px, 30px);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:black;
+    font-style: italic;
+}
+
+
+#top,#top2{
+    background-color: white;
+    width: 60px;
+    height: 6px;
+    border-radius: 6px;
+    transform: translate(4px,2px);
+}
+#covertop,#covertop2{
+    background-color: rgb(170, 119, 24);
+    width: 70px;
+    height: 9px;
+    border-radius: 6px;
+}
+#coverbottom,#coverbottom2{
+    background-color:rgb(170, 119, 24);
+    width: 60px;
+    height: 45px;
+    transform: translate(5px,0px);
+    border-radius: 0px 0px 6px 6px;
+}
+#bottom,#bottom2{
+    background-color: white;
+    width: 50px;
+    height: 43px;
+    transform: translate(3px,-1px);
+    border-radius: 0px 0px 6px 6px;
+}
+.bread{
+    transform: translate(710px, 320px);
+    position: absolute;
+}
+
+
+.bread2{
+    transform: translate(680px, 320px);
+    position: absolute;
+}
+
+body{
+    background-color: orange;
+    margin: 0px;
+    padding: 0px;
+}
+
+@keyframes bakeBread{
+    0%{transform: translate(710px,320px);}
+    /* 10%{transform: translate(710px,330px);}
+    20%{transform: translate(710px,340px);}
+    30%{transform: translate(710px,350px);}
+    40%{transform: translate(710px,360px);} */
+    50%{transform: translate(710px,370px);}
+    /* 60%{transform: translate(710px,360px);}
+    70%{transform: translate(710px,350px);}
+    80%{transform: translate(710px,340px);}
+    90%{transform: translate(710px,330px);} */
+    100%{transform: translate(710px,320px);}
+}
+@keyframes bakeBread2{
+    0%{transform: translate(680px,320px);}
+    /* 10%{transform: translate(680px,330px);}
+    20%{transform: translate(680px,340px);}
+    30%{transform: translate(680px,350px);}
+    40%{transform: translate(680px,360px);} */
+    50%{transform: translate(680px,370px);}
+    /* 60%{transform: translate(680px,360px);}
+    70%{transform: translate(680px,350px);}
+    80%{transform: translate(680px,340px);}
+    90%{transform: translate(680px,330px);} */
+    100%{transform: translate(680px,320px);}
+}
+@keyframes handlerMove{
+    0%{transform: translate(105px,-100px);}
+    /* 25%{transform: translate(105px,-70px);} */
+    50%{transform: translate(105px,-70px);}
+    /* 75%{transform: translate(105px,-90px);} */
+    100%{transform: translate(105px,-100px);}
+}
+.effect1{
+    animation:  handlerMove 3s infinite;
+}
+.effect2{
+    animation: bakeBread 3s infinite;
+}
+.effect3{
+    animation: bakeBread2 3s infinite;
+}
