@@ -1,0 +1,149 @@
+body{
+    background-color: cornflowerblue;
+    
+}
+
+#cover{
+    background-color: rgba(32, 28, 28, 0.938);
+    width: 70px;
+    height: 40px;
+    transform: translate(300px,100px);
+    border-radius: 3px;
+    position: relative;
+}
+
+#screenHd{
+    background-color: blanchedalmond;
+    width: 60px;
+    height: 25px;
+    transform: translate(305px,66px);
+    position: relative;
+    animation: blink 5s infinite;
+}
+#logo{
+    color: silver;
+    font-size: 5px;
+    transform: translate(328px,67px);
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#btmcover{
+    background-color: white;
+    width: 65px;
+    height: 20px;
+    transform: translate(292px,66px) skewX(-50deg);
+    border-radius: 3px;
+}
+#connector{
+    background-color: black;
+    width: 50px;
+    height: 3.8px;
+    transform: translate(310px,67px);
+}
+#btm{
+    background-color: rgba(32, 28, 28, 0.938);
+    width: 63px;
+    height: 3.5px;
+    transform: translate(282px,66px);
+    border-radius: 0px 0px 3px 3px;
+}
+#btmBck{
+    background-color:rgba(32, 28, 28, 0.938);
+    width: 33px;
+    height: 3.5px;
+    transform: translate(339px,53px) rotate(-40deg);
+    border-radius: 0px 0px 3px 3px;
+}
+#mousepad{
+    border: 0.1px solid black;
+    width: 12px;
+    height: 2px;
+    border-radius: 2px;
+    transform: skewX(-50deg) translate(375px,53.5px);
+    position: relative;
+}
+#line{
+    width: 64px;
+    background-color: rgba(32, 28, 28, 0.938);
+    height: 0.7px;
+    transform: translate(288px,48px) rotate(0deg);
+    position: absolute;
+}
+#button{
+    width: 40px;
+    height: 20px;
+    background-color: black;
+}
+#line1,#line2,#line6,#line7{
+    width: 1px;
+    height: 20px;
+    background-color: blanchedalmond;
+    
+}
+#line1{
+    transform: translate(5px, -20px);
+}
+#line2{
+    transform: translate(10px, -40px);
+}
+#line3,#line4,#line5{
+    width: 1px;
+    height: 15px;
+    background-color: blanchedalmond;
+   
+}
+#line3{
+     transform: translate(15px, -60px);
+    }
+#line4{
+    transform: translate(20px, -75px);
+}
+#line5{
+    transform: translate(25px, -90px);
+}
+#line6{
+    transform: translate(30px, -105px);
+}
+#line7{
+    transform: translate(35px, -125px);
+}
+#line8,#line9{
+    width: 40px;
+    height: 1px;
+    background-color: blanchedalmond;
+}
+#line8{
+    transform: translate(0px,-141px);
+}
+#line9{
+    transform: translate(0px,-136px);
+}
+#line10{
+    transform: translate(0px,-133px);
+    height: 1.5px;
+    background-color: blanchedalmond;
+    width: 40px;
+}
+#allbutton{
+    transform: skewX(-50deg) scale(1.4,0.5) translate(191px,0px);
+    position: absolute;
+}
+.laptop{
+    transform: scale(3) translate(350px,40px);
+}
+
+@keyframes blink{
+    0%{background-color: red;}
+    10%{background-color: blue}
+    20%{background-color: yellow;}
+    30%{background-color: green;}
+    40%{background-color: wheat}
+    50%{background-color: goldenrod}
+    60%{background-color: gray}
+    70%{background-color: orange}
+    80%{background-color: purple}
+    90%{background-color: cyan}
+    100%{background-color: white}
+}
